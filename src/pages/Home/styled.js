@@ -8,7 +8,7 @@ export const HomePageArea = styled.div`
 			width: 63%;
 			min-height: 100vh;
 			.full-posts {
-				margin: 20px 0 20px 0;
+				margin: 20px 0 40px 0;
 				border: 1px solid #dbdbdb;
 				border-radius: 3px;
 				.fp-picture {

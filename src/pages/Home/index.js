@@ -110,7 +110,7 @@ const Page = () => {
 									</div>
 
 									<div className="fp-picture">
-										<Slide>
+										<Slide autoplay={false} indicators={true} arrows={false}>
 											<div className="each-slide">
 												<img src={gambit} alt="" />
 											</div>
@@ -142,7 +142,7 @@ const Page = () => {
 									</div>
 
 									<div className="fp-picture">
-										<Slide>
+										<Slide autoplay={false} indicators={true} arrows={false}>
 											<div className="each-slide">
 												<img src={felipe} alt="" />
 											</div>
