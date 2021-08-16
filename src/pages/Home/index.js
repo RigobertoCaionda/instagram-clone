@@ -110,7 +110,7 @@ const Page = () => {
 									</div>
 
 									<div className="fp-picture">
-										<Slide autoplay={false} indicators={true} arrows={false}>
+										<Slide autoplay={false} indicators={true}>
 											<div className="each-slide">
 												<img src={gambit} alt="" />
 											</div>
@@ -124,8 +124,53 @@ const Page = () => {
 									</div>
 
 									<div className="fp-comments">
+										<div className="fp-comments-top">
+											<div className="comments-top">
+												<div className="comments-top-left">
+												<div className="wrapper">
+													<i className="far fa-heart"></i>
+													<i className="far fa-comment"></i>
+													<i className="fas fa-location-arrow"></i>
+												</div>
+												<div className="number-of-likes"><small>4 157 gostos</small>
+												</div>
 
+												</div>
+
+												<div className="comments-top-right"></div>
+											</div>
+										</div>
+
+										<div className="fp-comments-middle">
+											<Link to="">gustavogambit </Link> 
+											<small>Me conte em uma palavra... Você tem fome de que? 🤔
+											</small>
+											<span>... mais</span>
+											<div className="comments">
+												<Link to="">Ver todos os 191 comentários</Link>
+											</div>
+											<div className="other-person-comment">
+												<div className="text"><Link to="">_lucca.11 </Link>Comidas</div>
+												<i className="far fa-heart"></i>
+											</div>
+											<div className="other-person-comment">
+												<div className="text"><Link to="">wil.l888 </Link>Autodesenvolvimento</div>
+												<i className="far fa-heart"></i>
+											</div>
+											<div className="time"><small>HÁ 1 DIA</small></div>
+										</div>
+
+										<div className="fp-comments-bottom">
+											<div className="emoji"><i class="far fa-surprise"></i></div>
+											<div className="form">
+												<form method="GET" action="/send-comment">
+													<input type="text" placeholder="Adiciona um comentário..."/>
+													<button>Publicar</button>
+												</form>
+											</div>
+										</div>
 									</div>
+
 								</div>
 
 								<div className="full-posts">
@@ -142,7 +187,7 @@ const Page = () => {
 									</div>
 
 									<div className="fp-picture">
-										<Slide autoplay={false} indicators={true} arrows={false}>
+										<Slide autoplay={false} indicators={true}>
 											<div className="each-slide">
 												<img src={felipe} alt="" />
 											</div>
@@ -156,7 +201,51 @@ const Page = () => {
 									</div>
 
 									<div className="fp-comments">
+										<div className="fp-comments-top">
+											<div className="comments-top">
+												<div className="comments-top-left">
+												<div className="wrapper">
+													<i className="far fa-heart"></i>
+													<i className="far fa-comment"></i>
+													<i className="fas fa-location-arrow"></i>
+												</div>
+												<div className="number-of-likes"><small>4 157 gostos</small>
+												</div>
 
+												</div>
+
+												<div className="comments-top-right"></div>
+											</div>
+										</div>
+
+										<div className="fp-comments-middle">
+											<Link to="">felipemarx </Link> 
+											<small>Me conte em uma palavra... Você tem fome de que? 🤔
+											</small>
+											<span>... mais</span>
+											<div className="comments">
+												<Link to="">Ver todos os 191 comentários</Link>
+											</div>
+											<div className="other-person-comment">
+												<div className="text"><Link to="">_lucca.11 </Link>Comidas</div>
+												<i className="far fa-heart"></i>
+											</div>
+											<div className="other-person-comment">
+												<div className="text"><Link to="">wil.l888 </Link>Autodesenvolvimento</div>
+												<i className="far fa-heart"></i>
+											</div>
+											<div className="time"><small>HÁ 1 DIA</small></div>
+										</div>
+
+										<div className="fp-comments-bottom">
+											<div className="emoji"><i class="far fa-surprise"></i></div>
+											<div className="form">
+												<form method="GET" action="/send-comment">
+													<input type="text" placeholder="Adiciona um comentário..."/>
+													<button>Publicar</button>
+												</form>
+											</div>
+										</div>
 									</div>
 								</div>
 
@@ -180,7 +269,51 @@ const Page = () => {
 									</div>
 
 									<div className="fp-comments">
+										<div className="fp-comments-top">
+											<div className="comments-top">
+												<div className="comments-top-left">
+												<div className="wrapper">
+													<i className="far fa-heart"></i>
+													<i className="far fa-comment"></i>
+													<i className="fas fa-location-arrow"></i>
+												</div>
+												<div className="number-of-likes"><small>4 157 gostos</small>
+												</div>
 
+												</div>
+
+												<div className="comments-top-right"></div>
+											</div>
+										</div>
+
+										<div className="fp-comments-middle">
+											<Link to="">neymarjr </Link> 
+											<small>Me conte em uma palavra... Você tem fome de que? 🤔
+											</small>
+											<span>... mais</span>
+											<div className="comments">
+												<Link to="">Ver todos os 191 comentários</Link>
+											</div>
+											<div className="other-person-comment">
+												<div className="text"><Link to="">_lucca.11 </Link>Comidas</div>
+												<i className="far fa-heart"></i>
+											</div>
+											<div className="other-person-comment">
+												<div className="text"><Link to="">wil.l888 </Link>Autodesenvolvimento</div>
+												<i className="far fa-heart"></i>
+											</div>
+											<div className="time"><small>HÁ 1 DIA</small></div>
+										</div>
+
+										<div className="fp-comments-bottom">
+											<div className="emoji"><i class="far fa-surprise"></i></div>
+											<div className="form">
+												<form method="GET" action="/send-comment">
+													<input type="text" placeholder="Adiciona um comentário..."/>
+													<button>Publicar</button>
+												</form>
+											</div>
+										</div>
 									</div>
 								</div>
 
