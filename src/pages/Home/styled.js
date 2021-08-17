@@ -121,8 +121,14 @@ export const HomePageArea = styled.div`
 						border-top: 1px solid #dbdbdb;
 					}
 				}
+				.fp-picture.minHeight {
+					min-height: 400px;
+					video {
+						width: 100%;
+						height: 100%;
+					}
+				}
 				.fp-picture {
-					background-color: red;
 					height: 500px;
 					.each-slide img {
 						width: 100%;
@@ -171,7 +177,7 @@ export const HomePageArea = styled.div`
 								width: 100%;
 								height: 100%;
 								object-fit: cover;
-								clip-path: circle(50%);
+								border-radius: 50%;
 							}
 						}
 					}
@@ -229,6 +235,124 @@ export const HomePageArea = styled.div`
 			position: fixed;
 			right: 205px;
 			width: 25%;
+			padding: 30px;
+			.all-rights-reserved {
+				color: #c7c7c7;
+				font-size: 0.7rem;
+			}
+			nav {
+				margin-top: 40px;
+				margin-bottom: 15px;
+				ul {
+					display: flex;
+					flex-wrap: wrap;
+					list-style: none;
+					
+					a {
+						text-decoration: none;
+						font-size: 0.7rem;
+						color: #c7c7c7;
+					}
+				}
+			}
+			.suggestions {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				margin-top: 25px;
+				.follow {
+					text-align: right;
+					button {
+						border: 0;
+						outline: 0;
+						background: none;
+						color: #0095f6;
+						cursor: pointer;
+					}
+				}
+				.seeAll {
+					text-align: right;
+					a {
+						color: #262626;
+						text-decoration: none;
+						font-size: 0.8rem;
+					}
+				}
+				.sugg-for-you {
+					color: #8e8e8e;
+					font-size: 0.9rem;
+				}
+				.suggested-person {
+					display: flex;
+					align-items: center;
+					margin-top: 13px;
+					.pic {
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+						img {
+							width: 100%;
+							height: 100%;
+							border-radius: 50%;
+							object-fit: cover;
+						}
+					}
+					.sp-wrapper {
+						display: flex;
+						flex-direction: column;
+						margin-left: 13px;
+					}
+					small {
+						color: #8e8e8e;
+						font-size: 0.7rem;
+					}
+					a {
+						color: #262626;
+						text-decoration: none;
+						font-size: 0.9rem;
+						&: hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+			.account-details {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				.change {
+					button {
+						background: none;
+						border: 0;
+						outline: 0;
+						color: #0095f6;
+						cursor: pointer;
+					}
+				}
+				.user-name {
+					display: flex;
+					align-items: center;
+					.user {
+						.user2 {
+							color: #8e8e8e;
+							font-size: 0.9rem;
+						}
+						.user1 {
+							a {
+								color: #262626;
+								text-decoration: none;
+								font-size: 0.9rem;
+								font-weight: bold;
+							}
+						}
+					}
+					.user-pic {
+						margin-right: 15px;
+						i {
+							font-size: 3.6rem;
+						}
+					}
+				}
+			}
 		}
 	}
 `;
