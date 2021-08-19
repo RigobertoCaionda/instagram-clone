@@ -362,6 +362,17 @@ export const HomePageArea = styled.div`
 				flex-direction: column;
 				main {
 					width: 100%;
+					.full-posts {
+						.fp-comments-bottom {
+							.form {
+								form {
+									input {
+										font-size: 1rem;
+									}
+								}
+							}
+						}
+					}
 					.posters {
 						overflow-x: hidden;
 						a {
