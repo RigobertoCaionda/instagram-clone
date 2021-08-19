@@ -48,6 +48,36 @@ export const HeaderArea = styled.header`
 			cursor: pointer;
 		}
 	}
+	@media (max-width: 600px) {
+		.header {
+			.logoArea {
+				margin-right: 30px;
+			}
+			.menuArea {
+				ul {
+					li {
+						margin-right: 20px;
+						i {
+							font-size: 1.4rem;
+						}
+					}
+				}
+			}
+			.searchArea {
+				display: none;
+			}
+		}
+	}
+	@media (min-width: 768px) and (max-width: 1023px) {
+		.header {
+			.logoArea {
+				margin-right: 30px;
+			}
+			.searchArea {
+				margin-right: 30px;
+			}
+		}
+	}
 `;
 export const ExitButton = styled.div`
 	display: ${props=>props.exitVisibility};

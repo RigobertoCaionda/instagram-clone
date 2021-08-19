@@ -24,9 +24,11 @@ const Page = () => {
 			<HeaderArea>
 				<PageContainer>
 					<div className="header">
-						<div className="logoArea">
-							<img src={logo} alt="Instagram logo" />
-						</div>
+						<Link to="">
+							<div className="logoArea">
+								<img src={logo} alt="Instagram logo" />
+							</div>
+							</Link>
 						<div className="searchArea">
 							<form method="GET" action="/search">
 								<input type="text" placeholder="Pesquisar" onFocus={handleInputFocus}

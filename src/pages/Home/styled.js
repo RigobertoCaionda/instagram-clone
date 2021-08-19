@@ -355,4 +355,101 @@ export const HomePageArea = styled.div`
 			}
 		}
 	}
+	@media (max-width: 600px) {
+		& {
+
+			.posts-area {
+				flex-direction: column;
+				main {
+					width: 100%;
+					.posters {
+						overflow-x: hidden;
+						a {
+							.sp-poster-name {
+								small {
+									font-size: 0.7rem;
+								}
+							}
+						}
+					}
+				}
+				aside {
+					position: static;
+					width: 100%;
+					padding: 30px;
+					.account-details {
+						display: none;
+					}
+					.suggestions {
+						display: none;
+					}
+				}
+				
+					.fp-picture.minHeight {
+						height: 280px;
+						video {
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media (min-width: 768px) and (max-width: 1023px) {
+		.posts-area {
+			flex-direction: column;
+			main {
+				width: 80%;
+				margin: auto;
+				.posters {
+					overflow-x: hidden;
+					a {
+						.sp-poster-name {
+							small {
+								font-size: 0.7rem;
+							}
+						}
+					}
+				}
+			}
+							aside {
+									position: static;
+									width: 100%;
+									padding: 30px;
+									.account-details {
+										display: none;
+									}
+									.suggestions {
+										display: none;
+									}
+								}
+		}
+		
+	}
+`;
+export const VideoControls = styled.div`
+	display: ${props=>props.visibility};
+	position: relative;
+	opacity: ${props=>props.opac};
+	transtion: all ease-in 0.6s;
+	top: -265px;
+	left: 300px;
+	color: #e0e0e0;
+	font-size: 4rem;
+	cursor: pointer;
+	@media (max-width: 600px) {
+		& {
+			position: absolute;
+			top: 3200px;
+			left: 150px;
+		}
+	}
+	@media (min-width: 768px) and (max-width: 1023px) {
+		& {
+			position: absolute;
+			top: 3150px;
+			left: 350px;
+		}
+	}
 `;

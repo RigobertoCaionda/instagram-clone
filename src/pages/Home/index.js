@@ -1,5 +1,5 @@
-import React from 'react';
-import {HomePageArea} from './styled';
+import {useState} from 'react';
+import {HomePageArea, VideoControls} from './styled';
 import {PageContainer} from '../../components/mainComponents';
 import neymar from '../../images/neymar.JPG';
 import felipe from '../../images/felipe.JPG';
@@ -10,7 +10,42 @@ import video from '../../videos/video.MP4'
 import {Link} from 'react-router-dom';
 import {Slide} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+
 const Page = () => {
+	const [nomeClasse, setNomeClasse] = useState("fas fa-play");
+	const [visible, setVisible] = useState('block');
+	const [opacity, setOpacity] = useState(1);
+	const handleMouseover = () => {
+			setVisible('block');
+		if (nomeClasse === "fas fa-pause") {
+				setOpacity(0.8);
+		}
+	}
+	const handleMouseout = () => {
+		if (nomeClasse === "fas fa-pause") {
+			setVisible('none');
+		}
+				setOpacity(1);
+	}
+	const handleVideoButtonClick = () => {
+		let video = document.querySelector('video');
+		if (nomeClasse === "fas fa-play") {
+			setNomeClasse("fas fa-pause");
+			video.play();
+			setVisible('none');
+		}else {
+			setNomeClasse("fas fa-play");
+			video.pause();
+		}
+		
+	}
+
+	const handleEnded = () => {
+		setNomeClasse("fas fa-play");
+		setVisible('block');
+		setOpacity(1);
+	}
+
 	return(
 			<HomePageArea>
 					<PageContainer>
@@ -332,7 +367,12 @@ const Page = () => {
 									</div>
 
 									<div className="fp-picture minHeight">
-										<video controls="controls" src={video}></video>
+										<video src={video} onEnded={handleEnded} onMouseOver={handleMouseover}
+										onMouseOut={handleMouseout} style={{opacity: opacity, transition: 'all ease-in 0.6s'}}></video>
+										<VideoControls onClick={handleVideoButtonClick} visibility={visible}
+										onMouseOver={handleMouseover} onMouseOut={handleMouseout} opac={opacity}>
+											<i className={nomeClasse}></i>
+										</VideoControls>
 									</div>
 
 									<div className="fp-comments">
@@ -479,6 +519,7 @@ const Page = () => {
 								<div className="all-rights-reserved">© 2021 INSTAGRAM DO FACEBOOK</div>
 							</aside>
 						</div>
+						
 					</PageContainer>
 			</HomePageArea>
 		);
